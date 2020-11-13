@@ -5,13 +5,11 @@ pipeline {
     }
     agent {
       node {
-        //TODO: Add label for the Maven jenkins agent
 	label 'maven'
       }
     }
 
     environment {
-        //TODO: Customize these variables for your environment
         DEV_PROJECT = "jesus-basilio-movies-dev"
         STAGE_PROJECT = "jesus-basilio-movies-stage"
         APP_GIT_URL = "https://github.com/jesus-basilio-axa/DO288-apps"
